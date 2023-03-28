@@ -17,3 +17,9 @@ phases:
   post_build:
     commands:
       - echo Post-Build Phase
+  artifacts:
+    files:
+      - '**/*'
+    base-directory: 'dist'
+    discard-paths: yes
+  
